@@ -16,12 +16,15 @@ header{
 .header-logo{
 	float: left;
 	height: 70px;
-	width: 140px;
 }
 .nav{
 	width: 1024px;
 	height: 70px;
 	margin:  0 auto;
+}
+
+.icon{
+display: none;
 }
 .nav-list{
 	font-size: 16px;
@@ -62,6 +65,7 @@ header{
 	font-size: 32px;
 	color: #000000;
 	padding-top: 90px;
+	padding-bottom: 8px;
 	text-align: center;
 }
 .main1{
@@ -80,7 +84,7 @@ header{
 	padding-bottom: 90px;
 }
 .main4{
-	width: 480px;
+	width: 800px;
 	margin: 0 auto;
 	padding-bottom: 90px;
 }
@@ -104,16 +108,32 @@ h2{
 	color: #000000;
 	padding: 30px 0;
 }
+.feature-sub-headline{
+	font-size: 20px;
+	color: #000000;
+	padding: 10px 0;
+	text-align: center;
+}
+.strength-sub-headline-text{
+	font-size: 16px;
+	color: #000000;
+	text-align: left;
+	display: inline-block;
+}
 .Portfolio-image{
 	width: 300px;
 	height: 250px;
-	background-size: cover;
-	background-position: center;
+	margin: 5px 0;
+}
+.yohaku{
+	margin-left:5px;
+	margin-right:4px;
 }
 .Strength1{
 	float: left;
 	text-align: center;
 	margin-right: 10px;
+	margin-left: 10px;
 }
 .Strength2{
 	float: left;
@@ -127,12 +147,6 @@ h2{
 .fa-size{
 	font-size: 60px;
 	margin: 0 auto;
-}
-.sub-headline{
-	font-size: 20px;
-	color: #000000;
-	padding: 10px 0;
-	text-align: center;
 }
 .Profile{
 	text-align: center;
@@ -150,6 +164,7 @@ h2{
 	height: 250px;
 	margin: 0 auto;
 	background-image: url(img/my-icon.jpg);
+	border-radius: 400px;
 }
 .Profile-MyName-MySkills{
 	float: right;
@@ -158,18 +173,16 @@ h2{
 .Profile-image{
 	width: 250px;
 	height: 250px;
-	margin: 0 auto;
 }
 .Profile-sub-headline{
 	font-size: 20px;
 	color: #000000;
 	text-align: left;
 }
-.Profile-sub-headline2{
-	font-size: 20px;
+.profile-sub-headline-text{
+	font-size: 16px;
 	color: #000000;
-	text-align: left;
-	padding-bottom: 5px;
+	padding: 5px 0 8px 0;
 }
 .Contact{
 	text-align: center;
@@ -185,14 +198,16 @@ h2{
 }
 .Mail-Tell{
 	float: left;
-	width: 50%;
+	width: 40%;
+	margin-left: 10%;
 }
 .Mail-text{
 	padding-bottom: 20px;
 }
 .SNS{
 	float: right;
-	width:50%;
+	width: 40%;
+	margin-left: 10%;
 }
 .fa-size1{
 	font-size: 50px;
@@ -207,4 +222,123 @@ footer{
 }
 .footer-text{
 	color: #FAFAFA;
+}
+
+@media screen and (max-width: 767px){
+	*{
+	padding: auto 5%;
+	}
+	.nav-list-item{
+	display: none;
+	}
+	.icon{
+	float: right;
+	color: white;
+	width: 40px;
+	height: 40px;
+	border: 1px solid white;
+	margin-top: 4px;
+	margin-right: 10px;
+	}
+	.icon i{
+	font-size: 30px;
+	text-align: center;
+	line-height: 38px;
+	margin:0;
+	margin-left: 6px;
+
+	}
+	header{
+	height: 50px;
+	}
+	.nav{
+	width: 100%;
+	}
+	.header-logo{
+	height: 50px;
+	margin-left: 10px;
+	}
+	.hamburger{
+	border: solid 1px white;
+	padding: 8px;
+	margin: 3px 8px 3px 0px;
+	float: right;
+	}
+	.hamburger1, .hamburger2, .hamburger3{
+	border-bottom: solid 2px white;
+	width: 22px;
+	margin: 5px 4px;
+	}
+	.main1, .main2, .main3, .main4{
+	width: 100%;
+	}
+	.main-visual{
+	height: 750px;
+	background-image: url(img/code.png);
+	}
+	.main-visual-name{
+	font-size: 40px;
+	color: #FAFAFA;
+	}
+	.main-visual-text{
+	font-size: 18px;
+	margin-top: 10px;
+	}
+	.Portfolio, .Feature, .Contact{
+	width: 90%;
+	margin: 0 auto;
+	word-wrap: break-word;
+	}
+	.Portfolio-image{
+	margin: 10px auto;
+	}
+	img, .image-box{
+	display: block;
+	}
+	.pc{
+	display: none;
+	}
+	.Strength1, .Strength2, .Strength3{
+	margin: 10px auto;
+	float: none;
+	}
+	.Profile{
+	width: 90%;
+	margin: 30px auto;
+	}
+	.Profile-MyName-MySkills{
+	text-align: center;
+	width: 100%;
+	}
+	.Profile-sub-headline{
+	text-align: center;
+	margin: 20px auto 0 auto;
+	padding: 0 0 0 0;
+	}
+	.profile-sub-headline-text{
+	width: 90%;
+	margin: 0 auto;
+	padding: 5px 0 0 0;
+	}
+	.image-box, .Profile-MyName-MySkills{
+	float: none;
+	}
+	.image-box{
+	width: 100%;
+	}
+	.fa-size1{
+	margin-left: 8px;
+	margin-bottom: 90PX;
+	}
+	.Mail-Tell{
+	text-align: center;
+	width: 80%;
+    }
+    .SNS{
+    text-align: center;
+    width: 100%;
+    }
+	.Mail-text, .Tell-text{
+	padding-bottom: 20px;
+    }
 }

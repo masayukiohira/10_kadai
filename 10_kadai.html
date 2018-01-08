@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="10_kadai.css">
   <title> 10_kadai</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 <body>
 	<!-- header -->
@@ -18,6 +17,14 @@
 				<li class="nav-list-item"> Profile</li>
 				<li class="nav-list-item"> Contact</li>
 			</ul>
+			<div class="icon">
+				<i class="fa fa-bars fa-size1"></i>
+			</div>
+			<div class="hamburger">
+				<div class="hamburger1"></div>
+				<div class="hamburger2"></div>
+				<div class="hamburger3"></div>
+			</div>
 		</nav>
 	</header>
 	<!-- mainvisual -->
@@ -42,16 +49,12 @@
 					content of a page when looking at its layout.<br>
 					The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters
 				</div>
-				<div class="Portfolio-image1">
-				<img class="Portfolio-image" src="img/sketch.jpg">
-				<img class="Portfolio-image" src="img/websuku.png">
-				<img class="Portfolio-image" src="img/write.jpg">
-				</div>
-				<div class="Portfolio-image2">
-				<img class="Portfolio-image" src="img/webcamp.png">
-				<img class="Portfolio-image" src="img/talk.jpg">
+				<img class="Portfolio-image pc" src="img/sketch.jpg">
+				<img class="Portfolio-image yohaku" src="img/websuku.png">
+				<img class="Portfolio-image pc" src="img/write.jpg">
+				<img class="Portfolio-image " src="img/webcamp.png">
+				<img class="Portfolio-image yohaku pc" src="img/talk.jpg">
 				<img class="Portfolio-image" src="img/webcamp-mother.png">
-				</div>
 			</section>
 		</div>
 		<section class="main2">
@@ -66,9 +69,9 @@
 			<div class="Strength1">
 				<i class="fa fa-star fa-size"></i>
 				<section>
-				<h3 class="sub-headline"> Strength1</h3>
+				<h3 class="feature-sub-headline"> Strength1</h3>
 				</section>
-				<div class="sub-headline-text">
+				<div class="strength-sub-headline-text">
 					Contray to popular belief, Lorem Ipsum<br>
 					is not simply random text.It has roots<br>
 					in a piece of classical Latin literature<br>
@@ -82,9 +85,9 @@
 			<div class="Strength2">
 				<i class="fa fa-star-o fa-size"></i>
 				<section>
-				<h3 class="sub-headline"> Strength2</h3>
+				<h3 class="feature-sub-headline"> Strength2</h3>
 				</section>
-				<div class="sub-headline-text">
+				<div class="strength-sub-headline-text">
 					Contray to popular belief, Lorem Ipsum<br>
 					is not simply random text.It has roots<br>
 					in a piece of classical Latin literature<br>
@@ -98,9 +101,9 @@
 			<div class="Strength3">
 				<i class="fa fa-star-half-o fa-size"></i>
 				<section>
-				<h3 class="sub-headline"> Strength3</h3>
+				<h3 class="feature-sub-headline"> Strength3</h3>
 				</section>
-				<div class="sub-headline-text">
+				<div class="strength-sub-headline-text">
 					Contray to popular belief, Lorem Ipsum<br>
 					is not simply random text.It has roots<br>
 					in a piece of classical Latin literature<br>
@@ -112,7 +115,6 @@
 				</div>
             </div>
         </section>
-       
         <div class="main03">
         	<section class="main3">
 				<h2 class="main-headline"> Profile</h2>
@@ -129,15 +131,15 @@
 						</div>
 					<div class="Profile-MyName-MySkills">
 						<h3 class="Profile-sub-headline">MyName</h3>
-						<p class="sub-headline-text">
+						<p class="profile-sub-headline-text">
 							Contray to popular belief, Lorem Ipsumis not simply random<br>
 							text.It has roots in a piece of classical Latin literature from 45<br>
 							BC,making it over 2000 yearsold. Richard McClintock, a Latin<br>
 							professor at Hampden-Sydney Collegein Virginia, looked up<br>
 							one of the more obscure Latin words,consectetur
 						</p>
-						<h3 class="Profile-sub-headline2">MySkills</h3>
-						<p class="sub-headline-text">
+						<h3 class="Profile-sub-headline">MySkills</h3>
+						<p class="profile-sub-headline-text">
 							HTML/CSS/Javascript/JQuery/PhotoShop
 						</p>
 					</div>
@@ -161,7 +163,9 @@
 							xxx@xxx.com
 						</div>
 					<h3 class="Contact-sub-headline">Tell</h3>
-						000-0000-0000
+						<div class="Tell-text">
+							000-0000-000
+						</div>
 				</section>
 				<section class="SNS">
 					<h3 class="Contact-sub-headline">SNS</h3>
